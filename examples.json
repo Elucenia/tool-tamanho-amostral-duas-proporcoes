@@ -1,0 +1,69 @@
+[
+  {
+    "label": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "raw": {
+        "n": 198.97,
+        "perGroup": 199,
+        "total": 398
+      },
+      "main": "199",
+      "tol": 0.1
+    },
+    "originalInput": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "90"
+    },
+    "expected": {
+      "raw": {
+        "n": 265.87,
+        "perGroup": 266
+      },
+      "tol": 0.1
+    },
+    "originalInput": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "90"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Proporções iguais: erro",
+    "input": {
+      "p1": 30,
+      "p2": 30,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "p1": 30,
+      "p2": 30,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expandedZeroOptions": []
+  }
+]
