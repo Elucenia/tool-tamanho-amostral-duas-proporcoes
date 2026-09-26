@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-tamanho-amostral-duas-proporcoes",
   "version": "0.1.0",
-  "description": "Tamanho amostral para comparar duas proporções · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Tamanho amostral para comparar duas proporções · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
