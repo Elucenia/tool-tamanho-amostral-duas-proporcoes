@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-tamanho-amostral-duas-proporcoes · Elucenia · https://github.com/Elucenia/tool-tamanho-amostral-duas-proporcoes
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"tamanho-amostral-duas-proporcoes","title":"Tamanho amostral para comparar duas proporções","fields":[["p1","Proporção esperada no grupo 1 (ex.: controle)","num",{"min":0.1,"max":99.9,"step":0.1,"unit":"%","ph":"20"}],["p2","Proporção esperada no grupo 2 (ex.: intervenção)","num",{"min":0.1,"max":99.9,"step":0.1,"unit":"%","ph":"10"}],["alfa","Nível de significância (bicaudal)","radio",{"opts":{"1":"α = 1%","5":"α = 5%"}}],["poder","Poder do teste","radio",{"opts":{"80":"80%","90":"90%"}}],["perdas","Perdas previstas (opcional)","num",{"min":0,"max":50,"step":1,"unit":"%","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
