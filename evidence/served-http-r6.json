@@ -1,0 +1,635 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "tamanho-amostral-duas-proporcoes",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+    "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f",
+    "bytes": 5532
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "tamanho-amostral-duas-proporcoes",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+      "originalInput": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "input": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "n": 198.97,
+          "perGroup": 199,
+          "total": 398
+        },
+        "main": "199",
+        "tol": 0.1
+      },
+      "recordedResult": {
+        "main": [
+          "199",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "raw": {
+          "n": 198.96338254023922,
+          "perGroup": 199,
+          "total": 398
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p1": 20,
+            "p2": 10,
+            "alfa": "5",
+            "poder": "80"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+          "startedAt": "2026-10-05T17:39:50.832Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "tamanho-amostral-duas-proporcoes",
+              "main": [
+                "199",
+                "por grupo"
+              ],
+              "label": "Tamanho amostral (comparação de duas proporções)",
+              "raw": {
+                "n": 198.96338254023922,
+                "perGroup": 199,
+                "total": 398
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "0eca9eb2aeecd8c10ef1422b463aca9931977cca34b2e37831f7a32dd7b99952",
+          "bytes": 237,
+          "elapsedMs": 5.051199999987148
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+        "startedAt": "2026-10-05T17:39:50.832Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "tamanho-amostral-duas-proporcoes",
+            "main": [
+              "199",
+              "por grupo"
+            ],
+            "label": "Tamanho amostral (comparação de duas proporções)",
+            "raw": {
+              "n": 198.96338254023922,
+              "perGroup": 199,
+              "total": 398
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "0eca9eb2aeecd8c10ef1422b463aca9931977cca34b2e37831f7a32dd7b99952",
+        "bytes": 237,
+        "elapsedMs": 5.051199999987148
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "199",
+            "obtained": "199",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.n",
+            "expected": 198.97,
+            "obtained": 198.96338254023922,
+            "tolerance": 0.1,
+            "difference": 0.006617459760775546,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.perGroup",
+            "expected": 199,
+            "obtained": 199,
+            "tolerance": 0.1,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.total",
+            "expected": 398,
+            "obtained": 398,
+            "tolerance": 0.1,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n",
+            "expected": 198.96338254023922,
+            "obtained": 198.96338254023922,
+            "tolerance": 1.989633825402392e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.perGroup",
+            "expected": 199,
+            "obtained": 199,
+            "tolerance": 1.9899999999999998e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.total",
+            "expected": 398,
+            "obtained": 398,
+            "tolerance": 3.9799999999999997e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "199",
+            "obtained": "199",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "por grupo",
+            "obtained": "por grupo",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "tamanho-amostral-duas-proporcoes",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+      "originalInput": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "90"
+      },
+      "input": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "90"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "n": 265.87,
+          "perGroup": 266
+        },
+        "tol": 0.1
+      },
+      "recordedResult": {
+        "main": [
+          "266",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "raw": {
+          "n": 265.8560593204369,
+          "perGroup": 266,
+          "total": 532
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p1": 20,
+            "p2": 10,
+            "alfa": "5",
+            "poder": "90"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+          "startedAt": "2026-10-05T17:39:51.144Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "tamanho-amostral-duas-proporcoes",
+              "main": [
+                "266",
+                "por grupo"
+              ],
+              "label": "Tamanho amostral (comparação de duas proporções)",
+              "raw": {
+                "n": 265.8560593204369,
+                "perGroup": 266,
+                "total": 532
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "47a18e0267a5b5216011d0c878949ef79e4c8988b901dafe0cdc35eefb8dc867",
+          "bytes": 236,
+          "elapsedMs": 3.8299000000115484
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+        "startedAt": "2026-10-05T17:39:51.144Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "tamanho-amostral-duas-proporcoes",
+            "main": [
+              "266",
+              "por grupo"
+            ],
+            "label": "Tamanho amostral (comparação de duas proporções)",
+            "raw": {
+              "n": 265.8560593204369,
+              "perGroup": 266,
+              "total": 532
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "47a18e0267a5b5216011d0c878949ef79e4c8988b901dafe0cdc35eefb8dc867",
+        "bytes": 236,
+        "elapsedMs": 3.8299000000115484
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.n",
+            "expected": 265.87,
+            "obtained": 265.8560593204369,
+            "tolerance": 0.1,
+            "difference": 0.013940679563120284,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.perGroup",
+            "expected": 266,
+            "obtained": 266,
+            "tolerance": 0.1,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n",
+            "expected": 265.8560593204369,
+            "obtained": 265.8560593204369,
+            "tolerance": 2.658560593204369e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.perGroup",
+            "expected": 266,
+            "obtained": 266,
+            "tolerance": 2.66e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.total",
+            "expected": 532,
+            "obtained": 532,
+            "tolerance": 5.32e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "266",
+            "obtained": "266",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "por grupo",
+            "obtained": "por grupo",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "tamanho-amostral-duas-proporcoes",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Proporções iguais: erro",
+      "originalInput": {
+        "p1": 30,
+        "p2": 30,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "input": {
+        "p1": 30,
+        "p2": 30,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "amendments": [],
+      "expected": {
+        "error": true
+      },
+      "recordedResult": {
+        "error": "As duas proporções são iguais: não há diferença a detectar."
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p1": 30,
+            "p2": 30,
+            "alfa": "5",
+            "poder": "80"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+          "startedAt": "2026-10-05T17:39:51.453Z",
+          "status": 422,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "error": "As duas proporções são iguais: não há diferença a detectar.",
+            "code": "FORMULA_DOMAIN"
+          },
+          "responseSha256": "e84b54eba34eb5d417618bcf08336c5b66c2ab98d9e01ad36664d49dae22d6b0",
+          "bytes": 101,
+          "elapsedMs": 4.357799999997951
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/tamanho-amostral-duas-proporcoes/calculate",
+        "startedAt": "2026-10-05T17:39:51.453Z",
+        "status": 422,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "error": "As duas proporções são iguais: não há diferença a detectar.",
+          "code": "FORMULA_DOMAIN"
+        },
+        "responseSha256": "e84b54eba34eb5d417618bcf08336c5b66c2ab98d9e01ad36664d49dae22d6b0",
+        "bytes": 101,
+        "elapsedMs": 4.357799999997951
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "recorded-rejection",
+            "expected": "4xx with error and no result",
+            "obtained": {
+              "status": 422,
+              "error": "As duas proporções são iguais: não há diferença a detectar.",
+              "result": false
+            },
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
