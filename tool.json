@@ -3,11 +3,12 @@
     "id": "tamanho-amostral-duas-proporcoes",
     "title": "Tamanho amostral para comparar duas proporções",
     "short": "Amostra por grupo para ensaio clínico ou coorte",
+    "desc": "Calcule o número de participantes por grupo para detectar a diferença entre duas proporções, com nível de significância e poder escolhidos.",
+    "lead": "Estima quantos participantes cada grupo precisa para que um estudo comparativo (ensaio clínico ou coorte) detecte a diferença esperada entre duas proporções.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-preventiva-e-social"
     ],
-    "desc": "Calcule o número de participantes por grupo para detectar a diferença entre duas proporções, com nível de significância e poder escolhidos.",
-    "lead": "Estima quantos participantes cada grupo precisa para que um estudo comparativo (ensaio clínico ou coorte) detecte a diferença esperada entre duas proporções.",
     "fields": [
       [
         "p1",
@@ -68,36 +69,7 @@
         }
       ]
     ],
-    "formula": "<p>n por grupo = [z<sub>α/2</sub> × √(2 p̄ q̄) + z<sub>β</sub> × √(p<sub>1</sub>q<sub>1</sub> + p<sub>2</sub>q<sub>2</sub>)]² / (p<sub>1</sub> − p<sub>2</sub>)², com p̄ = (p<sub>1</sub> + p<sub>2</sub>)/2 e q = 1 − p.</p><p>z<sub>α/2</sub> = 1,96 (α 5%) ou 2,576 (α 1%); z<sub>β</sub> = 0,842 (poder 80%) ou 1,282 (poder 90%). Grupos de mesmo tamanho, sem correção de continuidade.</p>",
-    "table": [
-      [
-        "Proporções (p1 × p2)",
-        "Poder 80%",
-        "Poder 90%"
-      ],
-      [
-        "20% × 10%",
-        "199 por grupo",
-        "266 por grupo"
-      ],
-      [
-        "50% × 40%",
-        "388 por grupo",
-        "519 por grupo"
-      ],
-      [
-        "30% × 15%",
-        "121 por grupo",
-        "161 por grupo"
-      ]
-    ],
-    "table_note": "α = 5% bicaudal, grupos iguais, sem perdas.",
-    "tips": [
-      "A diferença a detectar deve ser a menor diferença <strong>clinicamente relevante</strong>, não a que se espera ou deseja encontrar: superestimar o efeito gera estudos sem poder.",
-      "Com correção de continuidade de Yates, a amostra aumenta um pouco: confira no software estatístico se for usar o teste qui-quadrado corrigido.",
-      "Esta fórmula é para grupos de mesmo tamanho e desfecho binário. Para médias, sobrevida, não inferioridade ou ensaios por conglomerados, use as fórmulas específicas.",
-      "Some as perdas previstas (abandono, perda de seguimento) e registre o cálculo no protocolo antes de iniciar o estudo."
-    ],
+    "formula": "<p>n por grupo = [z<sub>α/2</sub> × √(2 p̄ q̄) + z<sub>β</sub> × √(p<sub>1</sub>q<sub>1</sub> + p<sub>2</sub>q<sub>2</sub>)]² / (p<sub>1</sub> − p<sub>2</sub>)², com p̄ = (p<sub>1</sub> + p<sub>2</sub>)/2 e q = 1 − p.</p><p>A implementação usa coeficientes com seis casas decimais: z<sub>α/2</sub> = 1,959964 (α 5%) ou 2,575829 (α 1%); z<sub>β</sub> = 0,841621 (poder 80%) ou 1,281552 (poder 90%). Grupos de mesmo tamanho, sem correção de continuidade.</p><p>A equação corresponde à forma para coortes independentes de Charan e Biswas (2013, p. 123), com m = 1; a forma de ensaio com variância inteiramente agrupada da p. 124 é diferente. Os quantis normais foram conferidos matematicamente e arredondados a seis casas decimais; isso não valida a escolha do desenho. A citação WHO 1991 permanece sem conferência direta do manual.</p>",
     "sources": [
       [
         "Charan J, Biswas T. How to calculate sample size for different study designs in medical research? Indian J Psychol Med, 2013.",
@@ -106,6 +78,10 @@
       [
         "Lwanga SK, Lemeshow S. Sample size determination in health studies: a practical manual. Organização Mundial da Saúde, 1991.",
         "https://iris.who.int/handle/10665/40062"
+      ],
+      [
+        "Charan/Biswas2013 original article content reprinted in course PDF",
+        "https://www.yoursearchevidence.com/sites/g/files/vrxlpx50391/files/2024-10/M2_ParticularidadesInvestigacion.pdf"
       ]
     ],
     "cases": [
@@ -156,9 +132,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -167,17 +140,482 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:11:12.436Z",
+      "total": 84,
+      "passed": 84,
+      "sourceRowCount": 84,
+      "uniqueApiInputCount": 84,
+      "sourceContextCount": 84,
+      "scope": "84 selected equal-allocation independent-cohort equation scenarios at the local six-decimal normal coefficients, independently corroborated by NormalDist quantiles. Pooled-trial equation is different; WHO1991manual not directly checked. Local two-stage loss-ceiling arithmetic is not study-design approval.",
+      "originalSourceRowCount": 84,
+      "localRejectionContractCount": 0,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "6a13cd84a780f0d0e9f06452bc37b8c569db26e36a3a1497239d45bca9f4e046",
+        "total": 84,
+        "bankRowCount": 84,
+        "uniqueApiInputCount": 84,
+        "sourceContextCount": 84,
+        "fullStoredSourceRows": 84,
+        "localRejectionContractCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-physiology-independent-expectations-final31-r2.json",
+            "sha256": "bc426fb2ff7230f076e54fd4cb9ed20eb528f60466a7e74aefd8be54da17da89"
+          },
+          {
+            "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+            "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+          },
+          {
+            "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+            "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+          "sha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32"
+        },
+        "packagingRequirement": "Artifact contains all429original source rows across6methods, split424accepted numericcases+5separate local rejection contracts. Preserve source indices, original mathematical expectations and old sample precision expectations."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 84,
+        "uniqueApiInputs": 84,
+        "duplicateRows": 0
+      },
+      "sources": [
+        {
+          "rootPrimaryReview": {
+            "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+            "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+          },
+          "independentPrimaryReview": {
+            "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+            "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+          },
+          "targetedReadings": [
+            {
+              "id": "tamanho-amostral-duas-proporcoes",
+              "url": "https://journals.sagepub.com/doi/pdf/10.4103/0253-7176.116232",
+              "edition": "Charan/Biswas2013 explanatory design-specific review; equal-allocation independent-cohort form",
+              "access": "Actual publisher PDF web reader opened and targeted printed123(cohort) and124(trial) sections read; text mathematics partly garbled. Screenshot requests to publisher PDF failed cache retrieval; no claim of personally seeing a rendered formula image. OfficialPMC article also opened in earlier source reading.",
+              "readScope": "Equal m=1 cohort form separates null pooled variance from alternative group variances. The trial form printed124 is a different fully pooled formula and is not silently substituted. Printed approximate z-values do not define exact6decimal constants.",
+              "selectedScope": "Independent NormalDist inverse CDF quantiles rounded to6decimal places, compared to root independent integral-series/bisection. Cohort algebra and local two-step attrition ceil arithmetic selected.",
+              "excluded": [
+                "Universal study-design suitability",
+                "Other allocation ratios, matched designs, continuity corrections",
+                "Claim that local loss-ceiling or6decimal quantile policy is a printed clinical standard"
+              ]
+            },
+            {
+              "id": "tamanho-amostral-duas-proporcoes",
+              "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm",
+              "edition": "NIST/SEMATECH standard normal mathematical definitions",
+              "access": "Actual official density,CDF and inversepercent-point definitions opened and read; reopened during final peer. Root numerical integration implementation was not used to author own quantiles.",
+              "readScope": "Standard-normal density/CDF and inverse CDF support independently evaluated quantiles.",
+              "selectedScope": "Python standard-library NormalDist.inv_cdf, selected6decimal rounding:1.959964,2.575829,0.841621,1.281552.",
+              "excluded": [
+                "Inferential assumptions and study-design choice",
+                "Clinical validity or rounded paper constants equivalence"
+              ]
+            }
+          ],
+          "declaredOriginalMethodVersion": "WHO/Lwanga Lemeshow 1991:normalbilateral, gruposiguais, semcorreçãocontinuidade; z 1,96/2,576 e 0,842/1,282",
+          "sourceEditionsUnchanged": true,
+          "scope": "84 selected equal-allocation independent-cohort equation scenarios at the local six-decimal normal coefficients, independently corroborated by NormalDist quantiles. Pooled-trial equation is different; WHO1991manual not directly checked. Local two-stage loss-ceiling arithmetic is not study-design approval."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+      "evidenceSha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/root-physiology-independent-peer-publication-final31-r3.json",
+          "sha256": "2117b8908ee7ab1a8787ead1ce59bb3d3a422dbfe57d83501d746e9dcfbccd91"
+        },
+        "status": "passed-scoped-mathematical",
+        "ownNormalDistQuantilesIndependent": true,
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+          "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+          "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+          "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+        }
+      ],
+      "qualifications": [
+        "84 selected equal-allocation independent-cohort equation scenarios at the local six-decimal normal coefficients, independently corroborated by NormalDist quantiles. Pooled-trial equation is different; WHO1991manual not directly checked. Local two-stage loss-ceiling arithmetic is not study-design approval.",
+        "Continuous selected fields preserve the original source31R2 criterion1e-11×max(1,abs expected); integer/string fields use exact equality. Parent original fixtures/tolerances and all862historic source cases remain unchanged.",
+        "Three implementations and original actual Node/VM/Chromium captures are hash bound. Fresh Node/VM and complete-bank helper replays are separate from served portal, UI or new build gates.",
+        "Independent expected values: root initial429 mathematically authored before its imports; only84sample expecteds were revised to independently evaluated six-decimal quantiles with old printed-prose expected retained. Independent peer used NormalDist rather than root numerical-integration series.",
+        "No compensation/clinical diagnosis, exercise prediction/FAI, universally applicable dose,1969reticulocyte hard boundaries,44week clinical threshold, study-design suitability, professional language, rights or full-method approval.",
+        "Source28/29/30 and sample documentary amendment are independent ownership: compose evidence leaves over the latest source and recompute counters rather than replacing old whole catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Coortes independentes, Charan/Biswas 2013 p. 123, m=1; quantis normais com seis casas decimais; sem correção de continuidade; WHO 1991 não conferido diretamente",
+    "implementationVersion": "tamanho-amostral-duas-proporcoes@native-2026-10-03+6fa221e856ac",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775042/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "n por grupo = [z α/2 × √(2 p̄ q̄) + z β × √(p 1 q 1 + p 2 q 2 )]² / (p 1 − p 2 )², com p̄ = (p 1 + p 2 )/2 e q = 1 − p. A implementação usa coeficientes com seis casas decimais: z α/2 = 1,959964 (α 5%) ou 2,575829 (α 1%); z β = 0,841621 (poder 80%) ou 1,281552 (poder 90%). Grupos de mesmo tamanho, sem correção de continuidade. A equação corresponde à forma para coortes independentes de Charan e Biswas (2013, p. 123), com m = 1; a forma de ensaio com variância inteiramente agrupada da p. 124 é diferente. Os quantis normais foram conferidos matematicamente e arredondados a seis casas decimais; isso não valida a escolha do desenho. A citação WHO 1991 permanece sem conferência direta do manual.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "p1",
+            "label": "Proporção esperada no grupo 1 (ex.: controle)",
+            "type": "num",
+            "min": 0.1,
+            "max": 99.9,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "p2",
+            "label": "Proporção esperada no grupo 2 (ex.: intervenção)",
+            "type": "num",
+            "min": 0.1,
+            "max": 99.9,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alfa",
+            "label": "Nível de significância (bicaudal)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "α = 1%",
+              "5": "α = 5%"
+            }
+          },
+          {
+            "key": "poder",
+            "label": "Poder do teste",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "80": "80%",
+              "90": "90%"
+            }
+          },
+          {
+            "key": "perdas",
+            "label": "Perdas previstas (opcional)",
+            "type": "num",
+            "min": 0,
+            "max": 50,
+            "unit": "%",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "bc8c8f8b9b8df4e9fda87276b0574751fa2474fd5f7017353a76f548274a7066"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Charan J, Biswas T. How to calculate sample size for different study designs in medical research? Indian J Psychol Med, 2013.",
+          "url": "https://doi.org/10.4103/0253-7176.116232",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "How to calculate sample size for different study designs in medical research?",
+            "year": "2013",
+            "firstPublicationDate": "2013-04-01",
+            "doi": "10.4103/0253-7176.116232",
+            "pmid": "24049221",
+            "pmcid": "PMC3775042",
+            "journal": "Indian journal of psychological medicine",
+            "authors": "Charan J, Biswas T."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775042/",
+          "abstractAvailable": true,
+          "fullTextSha256": "783b0734e1cb433d1eef605660f823108ec1fb7f50e3c46fca23fcdc55d5635b",
+          "abstractSha256": "d382d5fb7e2a96cac101c35d11738c160ed5be23c13ef8a83b93c110d9831208",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lwanga SK, Lemeshow S. Sample size determination in health studies: a practical manual. Organização Mundial da Saúde, 1991.",
+          "url": "https://iris.who.int/handle/10665/40062",
+          "class": "source-access-inconclusive",
+          "publicationEditionConfirmed": false,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "Lwanga/Lemeshow, WHO 1991, cited edition; institutional handle inaccessible via browsing tool.",
+          "reason": "WHO IRIS open returned inaccessible; alternate primary statistical article in catalogue has bibliographic confirmation."
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:11:12.436Z",
+        "total": 84,
+        "passed": 84,
+        "sourceRowCount": 84,
+        "uniqueApiInputCount": 84,
+        "sourceContextCount": 84,
+        "scope": "84 selected equal-allocation independent-cohort equation scenarios at the local six-decimal normal coefficients, independently corroborated by NormalDist quantiles. Pooled-trial equation is different; WHO1991manual not directly checked. Local two-stage loss-ceiling arithmetic is not study-design approval.",
+        "originalSourceRowCount": 84,
+        "localRejectionContractCount": 0,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "6a13cd84a780f0d0e9f06452bc37b8c569db26e36a3a1497239d45bca9f4e046",
+          "total": 84,
+          "bankRowCount": 84,
+          "uniqueApiInputCount": 84,
+          "sourceContextCount": 84,
+          "fullStoredSourceRows": 84,
+          "localRejectionContractCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-physiology-independent-expectations-final31-r2.json",
+              "sha256": "bc426fb2ff7230f076e54fd4cb9ed20eb528f60466a7e74aefd8be54da17da89"
+            },
+            {
+              "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+              "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+            },
+            {
+              "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+              "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+            "sha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32"
+          },
+          "packagingRequirement": "Artifact contains all429original source rows across6methods, split424accepted numericcases+5separate local rejection contracts. Preserve source indices, original mathematical expectations and old sample precision expectations."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 84,
+          "uniqueApiInputs": 84,
+          "duplicateRows": 0
+        },
+        "sources": [
+          {
+            "rootPrimaryReview": {
+              "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+              "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+            },
+            "independentPrimaryReview": {
+              "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+              "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+            },
+            "targetedReadings": [
+              {
+                "id": "tamanho-amostral-duas-proporcoes",
+                "url": "https://journals.sagepub.com/doi/pdf/10.4103/0253-7176.116232",
+                "edition": "Charan/Biswas2013 explanatory design-specific review; equal-allocation independent-cohort form",
+                "access": "Actual publisher PDF web reader opened and targeted printed123(cohort) and124(trial) sections read; text mathematics partly garbled. Screenshot requests to publisher PDF failed cache retrieval; no claim of personally seeing a rendered formula image. OfficialPMC article also opened in earlier source reading.",
+                "readScope": "Equal m=1 cohort form separates null pooled variance from alternative group variances. The trial form printed124 is a different fully pooled formula and is not silently substituted. Printed approximate z-values do not define exact6decimal constants.",
+                "selectedScope": "Independent NormalDist inverse CDF quantiles rounded to6decimal places, compared to root independent integral-series/bisection. Cohort algebra and local two-step attrition ceil arithmetic selected.",
+                "excluded": [
+                  "Universal study-design suitability",
+                  "Other allocation ratios, matched designs, continuity corrections",
+                  "Claim that local loss-ceiling or6decimal quantile policy is a printed clinical standard"
+                ]
+              },
+              {
+                "id": "tamanho-amostral-duas-proporcoes",
+                "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm",
+                "edition": "NIST/SEMATECH standard normal mathematical definitions",
+                "access": "Actual official density,CDF and inversepercent-point definitions opened and read; reopened during final peer. Root numerical integration implementation was not used to author own quantiles.",
+                "readScope": "Standard-normal density/CDF and inverse CDF support independently evaluated quantiles.",
+                "selectedScope": "Python standard-library NormalDist.inv_cdf, selected6decimal rounding:1.959964,2.575829,0.841621,1.281552.",
+                "excluded": [
+                  "Inferential assumptions and study-design choice",
+                  "Clinical validity or rounded paper constants equivalence"
+                ]
+              }
+            ],
+            "declaredOriginalMethodVersion": "WHO/Lwanga Lemeshow 1991:normalbilateral, gruposiguais, semcorreçãocontinuidade; z 1,96/2,576 e 0,842/1,282",
+            "sourceEditionsUnchanged": true,
+            "scope": "84 selected equal-allocation independent-cohort equation scenarios at the local six-decimal normal coefficients, independently corroborated by NormalDist quantiles. Pooled-trial equation is different; WHO1991manual not directly checked. Local two-stage loss-ceiling arithmetic is not study-design approval."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+        "evidenceSha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/root-physiology-independent-peer-publication-final31-r3.json",
+            "sha256": "2117b8908ee7ab1a8787ead1ce59bb3d3a422dbfe57d83501d746e9dcfbccd91"
+          },
+          "status": "passed-scoped-mathematical",
+          "ownNormalDistQuantilesIndependent": true,
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+            "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+            "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+            "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+          }
+        ],
+        "qualifications": [
+          "84 selected equal-allocation independent-cohort equation scenarios at the local six-decimal normal coefficients, independently corroborated by NormalDist quantiles. Pooled-trial equation is different; WHO1991manual not directly checked. Local two-stage loss-ceiling arithmetic is not study-design approval.",
+          "Continuous selected fields preserve the original source31R2 criterion1e-11×max(1,abs expected); integer/string fields use exact equality. Parent original fixtures/tolerances and all862historic source cases remain unchanged.",
+          "Three implementations and original actual Node/VM/Chromium captures are hash bound. Fresh Node/VM and complete-bank helper replays are separate from served portal, UI or new build gates.",
+          "Independent expected values: root initial429 mathematically authored before its imports; only84sample expecteds were revised to independently evaluated six-decimal quantiles with old printed-prose expected retained. Independent peer used NormalDist rather than root numerical-integration series.",
+          "No compensation/clinical diagnosis, exercise prediction/FAI, universally applicable dose,1969reticulocyte hard boundaries,44week clinical threshold, study-design suitability, professional language, rights or full-method approval.",
+          "Source28/29/30 and sample documentary amendment are independent ownership: compose evidence leaves over the latest source and recompute counters rather than replacing old whole catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f",
+      "inputContractHashHistory": [
+        {
+          "hash": "3b0dfa964d7f003e55f0245c05f019a9b451144f3e4179f8326a5d131374c304",
+          "reason": "Only formula prose now states actual existing6decimal coefficients and independently read cohort equation edition; fields/options/config/numeric code unchanged.",
+          "formulaSha256": "ba15bfa34913101b1a120c77d9f60904551d6e47784f444d629aace4428c81a3"
+        }
+      ],
+      "sampleSizeSixDecimalDocumentationAmendment": {
+        "at": "2026-10-04T21:14:17.938Z",
+        "scope": "Documentation only: actual existing six-decimal coefficients disclosed; m=1 cohort equation distinguished from pooled trial variant. All mathematical calculations, fields/options/cases/clinical flags unchanged; original WHO citation preserved without claiming direct manual reading.",
+        "previousFormula": "<p>n por grupo = [z<sub>α/2</sub> × √(2 p̄ q̄) + z<sub>β</sub> × √(p<sub>1</sub>q<sub>1</sub> + p<sub>2</sub>q<sub>2</sub>)]² / (p<sub>1</sub> − p<sub>2</sub>)², com p̄ = (p<sub>1</sub> + p<sub>2</sub>)/2 e q = 1 − p.</p><p>z<sub>α/2</sub> = 1,96 (α 5%) ou 2,576 (α 1%); z<sub>β</sub> = 0,842 (poder 80%) ou 1,282 (poder 90%). Grupos de mesmo tamanho, sem correção de continuidade.</p>",
+        "newFormula": "<p>n por grupo = [z<sub>α/2</sub> × √(2 p̄ q̄) + z<sub>β</sub> × √(p<sub>1</sub>q<sub>1</sub> + p<sub>2</sub>q<sub>2</sub>)]² / (p<sub>1</sub> − p<sub>2</sub>)², com p̄ = (p<sub>1</sub> + p<sub>2</sub>)/2 e q = 1 − p.</p><p>A implementação usa coeficientes com seis casas decimais: z<sub>α/2</sub> = 1,959964 (α 5%) ou 2,575829 (α 1%); z<sub>β</sub> = 0,841621 (poder 80%) ou 1,281552 (poder 90%). Grupos de mesmo tamanho, sem correção de continuidade.</p><p>A equação corresponde à forma para coortes independentes de Charan e Biswas (2013, p. 123), com m = 1; a forma de ensaio com variância inteiramente agrupada da p. 124 é diferente. Os quantis normais foram conferidos matematicamente e arredondados a seis casas decimais; isso não valida a escolha do desenho. A citação WHO 1991 permanece sem conferência direta do manual.</p>",
+        "previousMethodVersion": "WHO/Lwanga Lemeshow 1991:normalbilateral, gruposiguais, semcorreçãocontinuidade; z 1,96/2,576 e 0,842/1,282",
+        "newMethodVersion": "Coortes independentes, Charan/Biswas 2013 p. 123, m=1; quantis normais com seis casas decimais; sem correção de continuidade; WHO 1991 não conferido diretamente",
+        "previousLimits": "Esta aproximação calcula o tamanho por grupo para duas proporções binárias independentes, com alocação igual e teste bilateral. Defina diferença clinicamente relevante, proporções esperadas, significância e poder; não trate a diferença desejada como resultado conhecido. O cálculo não incorpora pareamento, conglomerados, medidas repetidas ou alocação desigual, que exigem métodos próprios. O ajuste para perdas aumenta o recrutamento, mas não corrige viés ou um desenho inadequado. A íntegra do manual WHO 1991 não foi conferida.",
+        "newLimits": "Esta aproximação calcula o tamanho por grupo para duas proporções binárias independentes, com alocação igual e teste bilateral. Defina diferença clinicamente relevante, proporções esperadas, significância e poder; não trate a diferença desejada como resultado conhecido. O cálculo não incorpora pareamento, conglomerados, medidas repetidas ou alocação desigual, que exigem métodos próprios. O ajuste para perdas aumenta o recrutamento, mas não corrige viés ou um desenho inadequado. A íntegra do manual WHO 1991 não foi conferida. A equação corresponde à forma para coortes independentes de Charan e Biswas (2013, p. 123), com m = 1; a forma de ensaio com variância inteiramente agrupada da p. 124 é diferente. Os quantis normais foram conferidos matematicamente e arredondados a seis casas decimais; isso não valida a escolha do desenho. A citação WHO 1991 permanece sem conferência direta do manual.",
+        "actualCoefficients": [
+          1.959964,
+          2.575829,
+          0.841621,
+          1.281552
+        ],
+        "sourceReadScope": [
+          {
+            "url": "https://journals.sagepub.com/doi/pdf/10.4103/0253-7176.116232",
+            "readScope": "Publisher text-extracted pages123/124 targeted; formula screenshot retrieval failed; not entire-paper or WHO-manual proof."
+          },
+          {
+            "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm",
+            "readScope": "Actual density,CDF,inverseCDF definitions; own NormalDist quantiles corroborate root independent integralseries/bisection. Six-decimal precision is declared implementation choice."
+          }
+        ],
+        "authored": {
+          "file": "reports/review-20261003/sample-size-six-decimal-documentation-authored-final31-v2.cjs",
+          "sha256": "f19c5614c8f24e2451639db8f9f831876ae8a8bd2fbcda5754398dbd7b60bc60"
+        },
+        "independentMathPeer": {
+          "file": "reports/review-20261003/root-physiology-independent-peer-publication-final31-r3.json",
+          "sha256": "2117b8908ee7ab1a8787ead1ce59bb3d3a422dbfe57d83501d746e9dcfbccd91"
+        },
+        "sourceOracleRevision": {
+          "file": "reports/review-20261003/root-physiology-independent-expectations-final31-r2.json",
+          "sha256": "bc426fb2ff7230f076e54fd4cb9ed20eb528f60466a7e74aefd8be54da17da89",
+          "oldProseExpectedRetained": true
+        },
+        "unchanged": {
+          "fields": true,
+          "optionValues": true,
+          "cases": true,
+          "code": true,
+          "clinicalFlags": true,
+          "sourceCitationRows": true
+        },
+        "fullFormulaConformance": "not-performed",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed"
+      }
+    },
+    "limits": "Esta aproximação calcula o tamanho por grupo para duas proporções binárias independentes, com alocação igual e teste bilateral. Defina diferença clinicamente relevante, proporções esperadas, significância e poder; não trate a diferença desejada como resultado conhecido. O cálculo não incorpora pareamento, conglomerados, medidas repetidas ou alocação desigual, que exigem métodos próprios. O ajuste para perdas aumenta o recrutamento, mas não corrige viés ou um desenho inadequado. A íntegra do manual WHO 1991 não foi conferida. A equação corresponde à forma para coortes independentes de Charan e Biswas (2013, p. 123), com m = 1; a forma de ensaio com variância inteiramente agrupada da p. 124 é diferente. Os quantis normais foram conferidos matematicamente e arredondados a seis casas decimais; isso não valida a escolha do desenho. A citação WHO 1991 permanece sem conferência direta do manual.",
+    "limitsEvidence": {
+      "status": "direct-original-content-named-sections-read-manual-inaccessible",
+      "sources": [
+        {
+          "url": "https://www.yoursearchevidence.com/sites/g/files/vrxlpx50391/files/2024-10/M2_ParticularidadesInvestigacion.pdf",
+          "edition": "Charan/Biswas2013 original article content reprinted in course PDF",
+          "readScope": "Original article pages121–125 text read:two-group binary comparison,independence,clinicaldifference,power/significance and design-specificmethods;not a claim that simplified publishedformula matches current pooled-null/unpooled-alternativeformula bytewise."
+        },
+        {
+          "url": "https://iris.who.int/handle/10665/40062",
+          "edition": "WHO Lwanga/Lemeshow1991",
+          "readScope": "Institutional identity only;original manual download403 and alternatemirror unavailable."
+        }
+      ],
+      "populationScope": "Approximate unpaired equal-allocation comparison of two binary proportions.",
+      "remainingChecks": [
+        "WHO1991 original manual inaccessible.",
+        "Charan article supports design conditions,not bytewise certification of currentformula.",
+        "No complexdesign adjustment."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+    "bytes": 5532,
+    "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "fe3316be025b551ba86d03648d0b593353dad6cbaa041e2b68c237dbc7213dab",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "4d40ccd1663bf395b39b1173955dc583008088f7441cfbefd17acd80803c3df7",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "4d40ccd1663bf395b39b1173955dc583008088f7441cfbefd17acd80803c3df7",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

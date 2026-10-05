@@ -1,0 +1,518 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field p1",
+    "input": {
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field p1",
+    "input": {
+      "p1": "",
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" p1",
+    "input": {
+      "p1": "NaN",
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" p1",
+    "input": {
+      "p1": "Infinity",
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" p1",
+    "input": {
+      "p1": "1e309",
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" p1",
+    "input": {
+      "p1": "invalid",
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} p1",
+    "input": {
+      "p1": {},
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true p1",
+    "input": {
+      "p1": true,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum p1",
+    "input": {
+      "p1": -0.9,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum p1",
+    "input": {
+      "p1": 109.89000000000001,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field p2",
+    "input": {
+      "p1": 20,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field p2",
+    "input": {
+      "p1": 20,
+      "p2": "",
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" p2",
+    "input": {
+      "p1": 20,
+      "p2": "NaN",
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" p2",
+    "input": {
+      "p1": 20,
+      "p2": "Infinity",
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" p2",
+    "input": {
+      "p1": 20,
+      "p2": "1e309",
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" p2",
+    "input": {
+      "p1": 20,
+      "p2": "invalid",
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} p2",
+    "input": {
+      "p1": 20,
+      "p2": {},
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true p2",
+    "input": {
+      "p1": 20,
+      "p2": true,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum p2",
+    "input": {
+      "p1": 20,
+      "p2": -0.9,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum p2",
+    "input": {
+      "p1": 20,
+      "p2": 109.89000000000001,
+      "alfa": "5",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field alfa",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "poder": "80"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "alfa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field alfa",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "alfa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option alfa",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "__ELUCENIA_INVALID_OPTION__",
+      "poder": "80"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "alfa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field poder",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "poder"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field poder",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "poder"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option poder",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "poder"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum perdas",
+    "input": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80",
+      "perdas": 55
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "perdas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

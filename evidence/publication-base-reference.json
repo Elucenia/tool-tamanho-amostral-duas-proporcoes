@@ -1,0 +1,88 @@
+{
+  "id": "tamanho-amostral-duas-proporcoes",
+  "repository": "Elucenia/tool-tamanho-amostral-duas-proporcoes",
+  "branch": "main",
+  "commit": "8bb65623340e989464e54b99e68212c383174185",
+  "archiveSha256": "df646a9e96ef907679bc7b72936261cb09d8ad74a93724473c5ed4679896f964",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3397,
+      "sha": "852801a4dc866c5705dc23c199f3c93ab15e2973",
+      "sha256": "6fa40068130927fc406b5438913a339833578caa7f93d9f331a08abf3c45e5cb"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 997,
+      "sha": "0a24d37389896597016385be2477f96e1ef49a3a",
+      "sha256": "3d31be28c9b75f66c3439218c9181c3e7d273b8b0795befd9878398539bd5c0a"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1483,
+      "sha": "3881538cc25358a8fee01dfa6bf847f50a2c88a4",
+      "sha256": "a9de7c69cb32ad352ba21f631117b063843be26ddc2b2c6ecce5c71534bc64a6"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1697,
+      "sha": "efb113fef3f7644ca82f1ad212dbcedaf6a57ae2",
+      "sha256": "15e673d2af74c8ea74f6120e7b37daec3de5f24be3ae34cf6071489666ead43a"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

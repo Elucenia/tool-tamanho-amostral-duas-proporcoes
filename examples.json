@@ -1,6 +1,15 @@
 [
   {
-    "label": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+    "id": "tamanho-amostral-duas-proporcoes",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+    "originalInput": {
+      "p1": 20,
+      "p2": 10,
+      "alfa": "5",
+      "poder": "80"
+    },
     "input": {
       "p1": 20,
       "p2": 10,
@@ -16,16 +25,38 @@
       "main": "199",
       "tol": 0.1
     },
+    "recordedResult": {
+      "main": [
+        "199",
+        "por grupo"
+      ],
+      "label": "Tamanho amostral (comparação de duas proporções)",
+      "raw": {
+        "n": 198.96338254023922,
+        "perGroup": 199,
+        "total": 398
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "tamanho-amostral-duas-proporcoes",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
     "originalInput": {
       "p1": 20,
       "p2": 10,
       "alfa": "5",
-      "poder": "80"
+      "poder": "90"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "20% × 10%, α 5%, poder 90%: 266 por grupo",
     "input": {
       "p1": 20,
       "p2": 10,
@@ -39,16 +70,38 @@
       },
       "tol": 0.1
     },
-    "originalInput": {
-      "p1": 20,
-      "p2": 10,
-      "alfa": "5",
-      "poder": "90"
+    "recordedResult": {
+      "main": [
+        "266",
+        "por grupo"
+      ],
+      "label": "Tamanho amostral (comparação de duas proporções)",
+      "raw": {
+        "n": 265.8560593204369,
+        "perGroup": 266,
+        "total": 532
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Proporções iguais: erro",
+    "id": "tamanho-amostral-duas-proporcoes",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Proporções iguais: erro",
+    "originalInput": {
+      "p1": 30,
+      "p2": 30,
+      "alfa": "5",
+      "poder": "80"
+    },
     "input": {
       "p1": 30,
       "p2": 30,
@@ -58,12 +111,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "p1": 30,
-      "p2": 30,
-      "alfa": "5",
-      "poder": "80"
+    "recordedResult": {
+      "error": "As duas proporções são iguais: não há diferença a detectar."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

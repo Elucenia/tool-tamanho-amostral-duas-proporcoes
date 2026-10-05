@@ -1,0 +1,275 @@
+{
+  "id": "tamanho-amostral-duas-proporcoes",
+  "at": "2026-10-05T17:30:10.223Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
+    "bytes": 5532,
+    "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+  },
+  "cases": [
+    {
+      "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+      "input": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "obtained": {
+        "id": "tamanho-amostral-duas-proporcoes",
+        "main": [
+          "199",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "raw": {
+          "n": 198.96338254023922,
+          "perGroup": 199,
+          "total": 398
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "199",
+          "obtained": "199",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n",
+          "expected": 198.97,
+          "obtained": 198.96338254023922,
+          "tolerance": 0.1,
+          "difference": 0.006617459760775546,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.perGroup",
+          "expected": 199,
+          "obtained": 199,
+          "tolerance": 0.1,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.total",
+          "expected": 398,
+          "obtained": 398,
+          "tolerance": 0.1,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 198.96338254023922,
+          "obtained": 198.96338254023922,
+          "tolerance": 1.989633825402392e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.perGroup",
+          "expected": 199,
+          "obtained": 199,
+          "tolerance": 1.9899999999999998e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.total",
+          "expected": 398,
+          "obtained": 398,
+          "tolerance": 3.9799999999999997e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "199",
+          "obtained": "199",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "por grupo",
+          "obtained": "por grupo",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+      "input": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "90"
+      },
+      "obtained": {
+        "id": "tamanho-amostral-duas-proporcoes",
+        "main": [
+          "266",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "raw": {
+          "n": 265.8560593204369,
+          "perGroup": 266,
+          "total": 532
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.n",
+          "expected": 265.87,
+          "obtained": 265.8560593204369,
+          "tolerance": 0.1,
+          "difference": 0.013940679563120284,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.perGroup",
+          "expected": 266,
+          "obtained": 266,
+          "tolerance": 0.1,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 265.8560593204369,
+          "obtained": 265.8560593204369,
+          "tolerance": 2.658560593204369e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.perGroup",
+          "expected": 266,
+          "obtained": 266,
+          "tolerance": 2.66e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.total",
+          "expected": 532,
+          "obtained": 532,
+          "tolerance": 5.32e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "266",
+          "obtained": "266",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "por grupo",
+          "obtained": "por grupo",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Proporções iguais: erro",
+      "input": {
+        "p1": 30,
+        "p2": 30,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "obtained": {
+        "error": "As duas proporções são iguais: não há diferença a detectar.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "As duas proporções são iguais: não há diferença a detectar.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 38,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
