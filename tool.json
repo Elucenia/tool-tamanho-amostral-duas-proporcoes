@@ -274,7 +274,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Coortes independentes, Charan/Biswas 2013 p. 123, m=1; quantis normais com seis casas decimais; sem correção de continuidade; WHO 1991 não conferido diretamente",
-    "implementationVersion": "tamanho-amostral-duas-proporcoes@native-2026-10-03+6fa221e856ac",
+    "implementationVersion": "tamanho-amostral-duas-proporcoes@native-2026-10-05+fc378cb3d872",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775042/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -510,7 +510,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f",
+      "implementationHash": "fc378cb3d872d4cbac5803230ffd0f5eb49bfd6b12e840cc814da22c8dca4fbb",
       "inputContractHashHistory": [
         {
           "hash": "3b0dfa964d7f003e55f0245c05f019a9b451144f3e4179f8326a5d131374c304",
@@ -568,7 +568,35 @@
         "clinicalApproval": "not-performed",
         "professionalLanguageApproval": "not-performed",
         "sourceRightsApproval": "not-performed"
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "tamanho-amostral-duas-proporcoes@native-2026-10-03+6fa221e856ac",
+          "previousImplementationHash": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f",
+          "implementationHash": "fc378cb3d872d4cbac5803230ffd0f5eb49bfd6b12e840cc814da22c8dca4fbb",
+          "scientificBodySha256": "3952a5f0bddf47fbc57a0d9659635dd58ab36c63f69a642307b3a679b659a4ac",
+          "metadataContractHash": "bc8c8f8b9b8df4e9fda87276b0574751fa2474fd5f7017353a76f548274a7066",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Esta aproximação calcula o tamanho por grupo para duas proporções binárias independentes, com alocação igual e teste bilateral. Defina diferença clinicamente relevante, proporções esperadas, significância e poder; não trate a diferença desejada como resultado conhecido. O cálculo não incorpora pareamento, conglomerados, medidas repetidas ou alocação desigual, que exigem métodos próprios. O ajuste para perdas aumenta o recrutamento, mas não corrige viés ou um desenho inadequado. A íntegra do manual WHO 1991 não foi conferida. A equação corresponde à forma para coortes independentes de Charan e Biswas (2013, p. 123), com m = 1; a forma de ensaio com variância inteiramente agrupada da p. 124 é diferente. Os quantis normais foram conferidos matematicamente e arredondados a seis casas decimais; isso não valida a escolha do desenho. A citação WHO 1991 permanece sem conferência direta do manual.",
     "limitsEvidence": {
@@ -599,20 +627,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/tamanho-amostral-duas-proporcoes/calculator.js",
-    "bytes": 5532,
-    "sha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f"
+    "bytes": 5737,
+    "sha256": "fc378cb3d872d4cbac5803230ffd0f5eb49bfd6b12e840cc814da22c8dca4fbb"
   },
-  "sourceToolSha256": "fe3316be025b551ba86d03648d0b593353dad6cbaa041e2b68c237dbc7213dab",
+  "sourceToolSha256": "3c0b08fb8b9ffcbfa38aa4159a7770e4619299d59162e34540a7b8e3697f5f19",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "4d40ccd1663bf395b39b1173955dc583008088f7441cfbefd17acd80803c3df7",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "4d40ccd1663bf395b39b1173955dc583008088f7441cfbefd17acd80803c3df7",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

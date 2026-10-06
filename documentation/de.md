@@ -91,3 +91,27 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+20,0 % gegenüber 10,0 % bei α = 5 % (zweiseitig) und einer Teststärke von 80 % nachweisen
+
+| Ergebnisdetails | |
+| --- | --- |
+| Pro Gruppe (ohne Verluste) | 199 |
+| Gesamt (zwei Gruppen) | 398 |
+
+
+### 2
+
+20,0 % gegenüber 10,0 % bei α = 5 % (zweiseitig) und einer Teststärke von 90 % nachweisen
+
+| Ergebnisdetails | |
+| --- | --- |
+| Pro Gruppe (ohne Verluste) | 266 |
+| Gesamt (zwei Gruppen) | 532 |
+

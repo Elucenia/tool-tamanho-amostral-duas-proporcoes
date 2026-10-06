@@ -1,0 +1,172 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "tamanho-amostral-duas-proporcoes",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "cd982152c4615c41f0343cd415217bf9f7e3ce45",
+    "oldEngineSha256": "6fa221e856acf837e3022d9be888e65d68c774ba0a0a9df23ca3d86afc58c72f",
+    "currentEngineSha256": "fc378cb3d872d4cbac5803230ffd0f5eb49bfd6b12e840cc814da22c8dca4fbb"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+      "input": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "publicOutput": {
+        "id": "tamanho-amostral-duas-proporcoes",
+        "main": [
+          "199",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "raw": {
+          "n": 198.96338254023922,
+          "perGroup": 199,
+          "total": 398
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "n": 198.97,
+          "perGroup": 199,
+          "total": 398
+        },
+        "main": "199",
+        "tol": 0.1
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "199",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "level": "info",
+        "verdict": "Detectar 20,0% versus 10,0% com α = 5% (bicaudal) e poder de 80%",
+        "rows": [
+          [
+            "Por grupo (sem perdas)",
+            "199"
+          ],
+          [
+            "Total (dois grupos)",
+            "398"
+          ]
+        ],
+        "raw": {
+          "n": 198.96338254023922,
+          "perGroup": 199,
+          "total": 398
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+      "input": {
+        "p1": 20,
+        "p2": 10,
+        "alfa": "5",
+        "poder": "90"
+      },
+      "publicOutput": {
+        "id": "tamanho-amostral-duas-proporcoes",
+        "main": [
+          "266",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "raw": {
+          "n": 265.8560593204369,
+          "perGroup": 266,
+          "total": 532
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "n": 265.87,
+          "perGroup": 266
+        },
+        "tol": 0.1
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "266",
+          "por grupo"
+        ],
+        "label": "Tamanho amostral (comparação de duas proporções)",
+        "level": "info",
+        "verdict": "Detectar 20,0% versus 10,0% com α = 5% (bicaudal) e poder de 90%",
+        "rows": [
+          [
+            "Por grupo (sem perdas)",
+            "266"
+          ],
+          [
+            "Total (dois grupos)",
+            "532"
+          ]
+        ],
+        "raw": {
+          "n": 265.8560593204369,
+          "perGroup": 266,
+          "total": 532
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Proporções iguais: erro",
+      "input": {
+        "p1": 30,
+        "p2": 30,
+        "alfa": "5",
+        "poder": "80"
+      },
+      "publicOutput": {
+        "error": "As duas proporções são iguais: não há diferença a detectar.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

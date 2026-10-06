@@ -1,0 +1,1023 @@
+{
+  "id": "tamanho-amostral-duas-proporcoes",
+  "implementationVersion": "tamanho-amostral-duas-proporcoes@native-2026-10-05+fc378cb3d872",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Por grupo (sem perdas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "199",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (dois grupos)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "398",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Detectar 20,0% versus 10,0% com α = 5% (bicaudal) e poder de 80%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Por grupo (sem perdas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "266",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (dois grupos)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "532",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Detectar 20,0% versus 10,0% com α = 5% (bicaudal) e poder de 90%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Per group (no losses)",
+                "locale": "en",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "en",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (two groups)",
+                "locale": "en",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "en",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Detect 20.0% versus 10.0% with α = 5% (two-sided) and power of 80%",
+            "locale": "en",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Per group (no losses)",
+                "locale": "en",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "en",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (two groups)",
+                "locale": "en",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "en",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Detect 20.0% versus 10.0% with α = 5% (two-sided) and power of 90%",
+            "locale": "en",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Por grupo (sin pérdidas)",
+                "locale": "es",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "es",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (dos grupos)",
+                "locale": "es",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "es",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Detectar 20,0% frente a 10,0% con α = 5% (bilateral) y poder de 80%",
+            "locale": "es",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Por grupo (sin pérdidas)",
+                "locale": "es",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "es",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (dos grupos)",
+                "locale": "es",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "es",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Detectar 20,0% frente a 10,0% con α = 5% (bilateral) y poder de 90%",
+            "locale": "es",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Par groupe (sans pertes)",
+                "locale": "fr",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "fr",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (deux groupes)",
+                "locale": "fr",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "fr",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Détecter 20,0 % contre 10,0 % avec α = 5 % (bilatéral) et une puissance de 80 %",
+            "locale": "fr",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Par groupe (sans pertes)",
+                "locale": "fr",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "fr",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Total (deux groupes)",
+                "locale": "fr",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "fr",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Détecter 20,0 % contre 10,0 % avec α = 5 % (bilatéral) et une puissance de 90 %",
+            "locale": "fr",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pro Gruppe (ohne Verluste)",
+                "locale": "de",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "de",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gesamt (zwei Gruppen)",
+                "locale": "de",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "de",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20,0 % gegenüber 10,0 % bei α = 5 % (zweiseitig) und einer Teststärke von 80 % nachweisen",
+            "locale": "de",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pro Gruppe (ohne Verluste)",
+                "locale": "de",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "de",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gesamt (zwei Gruppen)",
+                "locale": "de",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "de",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20,0 % gegenüber 10,0 % bei α = 5 % (zweiseitig) und einer Teststärke von 90 % nachweisen",
+            "locale": "de",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Per gruppo (senza perdite)",
+                "locale": "it",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "it",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Totale (due gruppi)",
+                "locale": "it",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "it",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rilevare 20,0% contro 10,0% con α = 5% (bilaterale) e potenza di 80%",
+            "locale": "it",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Per gruppo (senza perdite)",
+                "locale": "it",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "it",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Totale (due gruppi)",
+                "locale": "it",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "it",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rilevare 20,0% contro 10,0% con α = 5% (bilaterale) e potenza di 90%",
+            "locale": "it",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "لكل مجموعة (دون فقد)",
+                "locale": "ar",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "١٩٩",
+                "locale": "ar",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الإجمالي (مجموعتان)",
+                "locale": "ar",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "٣٩٨",
+                "locale": "ar",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الكشف عن ٢٠٫٠% مقابل ١٠٫٠% مع α = ٥% (ثنائي الطرف) وقوة إحصائية قدرها ٨٠%",
+            "locale": "ar",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "لكل مجموعة (دون فقد)",
+                "locale": "ar",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "٢٦٦",
+                "locale": "ar",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الإجمالي (مجموعتان)",
+                "locale": "ar",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "٥٣٢",
+                "locale": "ar",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الكشف عن ٢٠٫٠% مقابل ١٠٫٠% مع α = ٥% (ثنائي الطرف) وقوة إحصائية قدرها ٩٠%",
+            "locale": "ar",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "每组（无失访）",
+                "locale": "zh",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "zh",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "总计（两组）",
+                "locale": "zh",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "zh",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "以α = 5%（双侧）和80%的检验效能，检测20.0%与10.0%之间的差异",
+            "locale": "zh",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "每组（无失访）",
+                "locale": "zh",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "zh",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "总计（两组）",
+                "locale": "zh",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "zh",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "以α = 5%（双侧）和90%的检验效能，检测20.0%与10.0%之间的差异",
+            "locale": "zh",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "群ごと（脱落なし）",
+                "locale": "ja",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "ja",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "合計（2群）",
+                "locale": "ja",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "ja",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "α = 5%（両側）および検出力 80% で 20.0% 対 10.0% を検出する",
+            "locale": "ja",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "群ごと（脱落なし）",
+                "locale": "ja",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "ja",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "合計（2群）",
+                "locale": "ja",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "ja",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "α = 5%（両側）および検出力 90% で 20.0% 対 10.0% を検出する",
+            "locale": "ja",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "20% × 10%, α 5%, poder 80%: 199 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रति समूह (बिना हानि)",
+                "locale": "hi",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "199",
+                "locale": "hi",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  199
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "कुल (दो समूह)",
+                "locale": "hi",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "398",
+                "locale": "hi",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  398
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "α = 5% (दो-तरफा) और शक्ति 80% के साथ 20.0% बनाम 10.0% का पता लगाना",
+            "locale": "hi",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              80
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "20% × 10%, α 5%, poder 90%: 266 por grupo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रति समूह (बिना हानि)",
+                "locale": "hi",
+                "template": "documented-authored-7f2d2208d62ac0ff2856"
+              },
+              "value": {
+                "text": "266",
+                "locale": "hi",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  266
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "कुल (दो समूह)",
+                "locale": "hi",
+                "template": "documented-authored-d715478d4aa6d1dd0e07"
+              },
+              "value": {
+                "text": "532",
+                "locale": "hi",
+                "template": "documented-authored-fea797eec80b93a063d9",
+                "sourceNumbers": [
+                  532
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "α = 5% (दो-तरफा) और शक्ति 90% के साथ 20.0% बनाम 10.0% का पता लगाना",
+            "locale": "hi",
+            "template": "documented-authored-8c75254327f44cd96a15",
+            "sourceNumbers": [
+              20,
+              10,
+              5,
+              90
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

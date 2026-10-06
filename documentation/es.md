@@ -91,3 +91,27 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Detectar 20,0% frente a 10,0% con α = 5% (bilateral) y poder de 80%
+
+| Detalles del resultado | |
+| --- | --- |
+| Por grupo (sin pérdidas) | 199 |
+| Total (dos grupos) | 398 |
+
+
+### 2
+
+Detectar 20,0% frente a 10,0% con α = 5% (bilateral) y poder de 90%
+
+| Detalles del resultado | |
+| --- | --- |
+| Por grupo (sin pérdidas) | 266 |
+| Total (dos grupos) | 532 |
+

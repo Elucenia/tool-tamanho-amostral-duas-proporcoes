@@ -91,3 +91,27 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Detect 20.0% versus 10.0% with α = 5% (two-sided) and power of 80%
+
+| Result details | |
+| --- | --- |
+| Per group (no losses) | 199 |
+| Total (two groups) | 398 |
+
+
+### 2
+
+Detect 20.0% versus 10.0% with α = 5% (two-sided) and power of 90%
+
+| Result details | |
+| --- | --- |
+| Per group (no losses) | 266 |
+| Total (two groups) | 532 |
+
